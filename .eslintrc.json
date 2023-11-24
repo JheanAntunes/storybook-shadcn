@@ -1,3 +1,27 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react":{
+      "version":"detect"
+    } 
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ],
+  "plugins": [
+    "react-hooks"
+  ],  
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types":"off"
+  } 
 }
