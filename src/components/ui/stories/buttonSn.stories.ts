@@ -12,11 +12,11 @@ const meta = {
       control: { type: 'select' },
       options: [
         'default',
+        'secondary',
         'destructive',
         'ghost',
         'link',
         'outline',
-        'secondary',
       ],
     },
     size: {
@@ -40,6 +40,14 @@ export const Default: Story = {
     children: 'ButtonShadcn',
   },
 }
+
+export const Secondary: Story = {
+  args: {
+    variant: 'secondary',
+    children: 'ButtonShadcn',
+  },
+}
+
 export const Destructive: Story = {
   args: {
     variant: 'destructive',
@@ -63,13 +71,6 @@ export const Link: Story = {
 export const Outline: Story = {
   args: {
     variant: 'outline',
-    children: 'ButtonShadcn',
-  },
-}
-
-export const Secondary: Story = {
-  args: {
-    variant: 'secondary',
     children: 'ButtonShadcn',
   },
 }
