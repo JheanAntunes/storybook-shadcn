@@ -11,13 +11,13 @@ import { FormSchemaDatePicker } from '../../../schema/schemaForm'
 import { Button } from '../button'
 import { Calendar } from '../calendar'
 import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
+    Form,
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
 } from '../form'
 import { Popover, PopoverContent, PopoverTrigger } from '../popover'
 import { toast } from '../use-toast'
@@ -57,7 +57,7 @@ export function DatePickerForm() {
                                             className={cn(
                                                 'w-[240px] pl-3 text-left font-normal',
                                                 !field.value &&
-                                                    'text-muted-foreground'
+                                                    'text-muted-foreground',
                                             )}
                                         >
                                             {field.value ? (

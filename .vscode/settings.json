@@ -7,4 +7,5 @@
     "eslint.validate": ["javascript"],
     "typescript.tsdk": "node_modules/typescript/lib",
     "typescript.enablePromptUseWorkspaceTsdk": true,
+    "files.eol": "\n"
 }
