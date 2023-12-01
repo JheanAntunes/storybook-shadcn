@@ -1,0 +1,21 @@
+import { Canvas, Meta} from '@storybook/blocks';
+import * as AccordionStories from '../stories/accordio-demo.stories';
+
+<Meta of={AccordionStories}/>
+
+<section>
+    <h1> Accordion</h1>
+    <p className="">A vertically stacked set of interactive headings that each reveal a section of content</p>
+    <div style={{display:"flex", gap:"20px", color:"#029CFD"}}>
+        <a href="https://www.radix-ui.com/primitives/docs/components/accordion" target="_blank" rel="noreferrer">Radix</a> <span> | </span>
+        <a href="https://www.radix-ui.com/primitives/docs/components/accordion#api-reference" target="_blank" rel="noreferrer" >API Reference</a>
+    </div>
+</section>
+<Canvas of={AccordionStories.AcorrdionDemo}/>
+
+<section>
+    <h2>Accordion with one item </h2>
+</section>
+<Canvas of={AccordionStories.AccordionWithOneItem}/>
+
+
