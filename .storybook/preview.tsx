@@ -2,6 +2,10 @@ import { withThemeByClassName } from "@storybook/addon-themes";
 import type { Preview } from "@storybook/react";
 import { themes } from '@storybook/theming';
 import "../src/styles/globals.css";
+import {ThemeProvider} from "../src/components/theme/theme-provider"
+import * as React from "react"
+import {darkUIStorybook, lightUIStorybook} from "./themes-Storybook-UI"
+
 const preview: Preview = {
   parameters: {
     // https://storybook.js.org/addons/storybook-dark-mode
@@ -11,12 +15,10 @@ const preview: Preview = {
       darkClass: 'dark',
       lightClass: 'light',
       // Override the default dark theme
-      dark: { ...themes.dark,
-      },
+      dark: { ...themes.dark, ...darkUIStorybook},
       // Override the default light theme
-      light: { ...themes.normal, 
-      },
-       // Set the initial theme
+      light: { ...themes.normal, ...lightUIStorybook},
+      // Set the initial theme
       current: 'dark'
     },
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -27,16 +29,28 @@ const preview: Preview = {
       },
     },
   },
-  decorators:[
-   withThemeByClassName({
-     themes: {
-       light: 'light',
-       dark: 'dark',
-     },
-     defaultTheme: 'dark',
-   }),
-  ]
 };
 
+export const decorators = [
+ (Story) => {
+  return <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            disableTransitionOnChange
+          >
+          <div>
+                <Story />
+          </div>
+    </ThemeProvider>
+ }
+ ,
+  withThemeByClassName({
+   themes: {
+     light: 'light',
+     dark: 'dark',
+   },
+   defaultTheme: 'dark',
+ }),
+]
 
 export default preview;
