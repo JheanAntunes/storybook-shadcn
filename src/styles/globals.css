@@ -66,6 +66,86 @@
   }
 
 }
+
+.dark .sbdocs-wrapper,
+.dark .css-11ju8y0,
+.dark .css-1f9domv,
+.dark .css-p1dfi6,
+.dark .sbdocs-preview {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.dark .sbdocs .sbdocs-content .css-qa4clq {
+  color: hsl(var(--foreground));
+}
+
+.dark .sbdocs-preview {
+  border: 1px solid hsl(var(--border)) 
+}
+
+.dark .docblock-code-toggle {
+  background: transparent;
+  color: hsl(var(--foreground));
+}
+
+.dark .css-qa4clq * {
+  color: hsl(var(--foreground)) hsl(var(--foreground))
+}
+
+.dark div:has(.docblock-code-toggle) {
+  background: transparent;
+}
+
+.dark .os-theme-dark {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.dark .sbdocs-title {
+  color: hsl(var(--foreground));
+}
+
+.dark .docblock-argstable-head {
+  background: hsl(var(--background));
+}
+
+.dark .docblock-argstable-head th {
+  color: hsl(var(--foreground));
+  border-bottom: 1px solid hsl(var(--border)) !important;
+}
+
+.dark .docblock-argstable-head th span {
+  color: hsl(var(--foreground));
+}
+
+.dark #docs-root tbody td {
+  background: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.dark #docs-root tbody tr:first-child td:first-child {
+  border-top-left-radius: 0 !important;
+}
+
+.dark #docs-root tbody tr:first-child td:last-child {
+  border-top-right-radius: 0 !important;
+}
+
+.dark #docs-root tbody tr:not(:first-child) {
+  border-top: 1px solid hsl(var(--border)) !important;
+}
+
+.dark .css-v2ifgj.css-v2ifgj tbody >tr>* {
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+  border-color: hsl(var(--border));
+}
+
+.dark #control-variant {
+  background-color: hsl(var(--input));
+  color: hsl(var(--foreground));
+}
  
 @layer base {
   * {
