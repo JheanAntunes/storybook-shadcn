@@ -49,6 +49,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "lucide-react": "^0.293.0",
     "next": "14.0.3",
+    "next-themes": "^0.2.1",
     "react": "^18",
     "react-day-picker": "^8.9.1",
     "react-dom": "^18",
