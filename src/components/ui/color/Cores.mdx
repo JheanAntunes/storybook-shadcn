@@ -1,0 +1,62 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Colors/Colors" />
+
+<ColorPalette>
+  <ColorItem
+    title="bg-background"
+    subtitle="className='bg-background'"
+    colors={{ "bg-background": 'hsl(var(--background))'}}
+  />
+  <ColorItem
+    title="text-foreground"
+    subtitle="className='text-foreground'"
+    colors={{ "text-foreground": 'hsl(var(--foreground))'}}
+  />
+ 
+  {/* Primary */}
+  <ColorItem
+    title="primary"
+    subtitle="className='text-primary'"
+    colors={{ primary: 'hsl(var(--primary))', "primary-foreground": 'hsl(var(--primary-foreground))'}}
+  />
+  
+  {/* Secondary */}
+  <ColorItem
+    title="secondary"
+    subtitle="className='text-secondary' bg-primary"
+    colors={{ secondary: 'hsl(var(--secondary))', secondary: 'hsl(var(--secondary-foreground))'}}
+  />
+  
+  {/* Muted */}
+  <ColorItem
+    title="muted"
+    subtitle="className='text-muted-foreground bg-muted'"
+    colors={{ muted: 'hsl(var(--muted))', "muted-foreground": 'hsl(var(--muted-foreground))'}}
+  />
+  
+  {/* destructive */}
+  <ColorItem
+    title="destructive"
+    subtitle="className='text-destructive-foreground bg-destructive'"
+    colors={{ destructive: 'hsl(var(--destructive))', "destructive-foreground": 'hsl(var(--destructive-foreground))'}}
+  />
+ 
+  {/* border, input, ring */}
+  <ColorItem
+    title="border"
+    subtitle="className='border-border'"
+    colors={{ border: 'hsl(var(--border))'}}
+  />
+  <ColorItem
+    title="input"
+    subtitle="bg-input"
+    colors={{ input: 'hsl(var(--input))'}}
+  />
+  <ColorItem
+    title="ring"
+    subtitle="className='ring-offset-background'"
+    colors={{ ring: 'hsl(var(--ring))'}}
+  />
+
+</ColorPalette>
