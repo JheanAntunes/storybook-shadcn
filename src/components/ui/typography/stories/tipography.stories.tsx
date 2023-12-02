@@ -13,6 +13,7 @@ import {
     TypographyList,
     TypographyMuted,
     TypographyTable,
+    TypographyListItem,
 } from '../typography'
 
 const meta = {
@@ -79,7 +80,19 @@ export const Table: Story = {
 }
 export const List: Story = {
     render: (args) => {
-        return <TypographyList />
+        return (
+            <TypographyList>
+                <TypographyListItem>
+                    1st level of puns: 5 gold coins
+                </TypographyListItem>
+                <TypographyListItem>
+                    2nd level of jokes: 10 gold coins
+                </TypographyListItem>
+                <TypographyListItem>
+                    3rd level of one-liners : 20 gold coins
+                </TypographyListItem>
+            </TypographyList>
+        )
     },
 }
 export const InlineCode: Story = {
@@ -162,7 +175,17 @@ export const History: Story = {
                     The kings subjects were not amused. They grumbled and
                     complained, but the king was firm:
                 </TypographyP>
-                <TypographyList />
+                <TypographyList>
+                    <TypographyListItem>
+                        1st level of puns: 5 gold coins
+                    </TypographyListItem>
+                    <TypographyListItem>
+                        2nd level of jokes: 10 gold coins
+                    </TypographyListItem>
+                    <TypographyListItem>
+                        3rd level of one-liners : 20 gold coins
+                    </TypographyListItem>
+                </TypographyList>
                 <TypographyP>
                     As a result, people stopped telling jokes, and the kingdom
                     fell into a gloom. But there was one person who refused to
