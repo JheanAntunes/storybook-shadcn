@@ -18,7 +18,6 @@ import {
 const meta = {
     title: 'Shadcn/tipography',
     component: TypographyH1,
-    tags: ['autodocs'],
     parameters: {
         layout: 'centered',
     },
@@ -127,5 +126,84 @@ export const Muted: Story = {
     },
     render: (args) => {
         return <TypographyMuted>{args.children}</TypographyMuted>
+    },
+}
+
+export const History: Story = {
+    render: (args) => {
+        return (
+            <div>
+                <TypographyH1>The Joke Tax Chronicles</TypographyH1>
+                <TypographyP>
+                    Once upon a time, in a far-off land, there was a very lazy
+                    king who spent all day lounging on his throne. One day, his
+                    advisors came to him with a problem: the kingdom was running
+                    out of money.
+                </TypographyP>
+                <TypographyH2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+                    The Kings Plan
+                </TypographyH2>
+                <TypographyP>
+                    The king thought long and hard, and finally came up with
+                    <a
+                        href="#"
+                        className="font-medium text-primary underline underline-offset-4"
+                    >
+                        a brilliant plan
+                    </a>
+                    : he would tax the jokes in the kingdom.
+                </TypographyP>
+                <TypographyBlockquote>
+                    After all, he said, everyone enjoys a good joke, so its only
+                    fair that they should pay for the privilege.
+                </TypographyBlockquote>
+                <TypographyH3>The Joke Tax</TypographyH3>
+                <TypographyP>
+                    The kings subjects were not amused. They grumbled and
+                    complained, but the king was firm:
+                </TypographyP>
+                <TypographyList />
+                <TypographyP>
+                    As a result, people stopped telling jokes, and the kingdom
+                    fell into a gloom. But there was one person who refused to
+                    let the kings foolishness get him down: a court jester named
+                    Jokester.
+                </TypographyP>
+                <TypographyH3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+                    Jokesters Revolt
+                </TypographyH3>
+                <TypographyP>
+                    Jokester began sneaking into the castle in the middle of the
+                    night and leaving jokes all over the place: under the kings
+                    pillow, in his soup, even in the royal toilet. The king was
+                    furious, but he couldnt seem to stop Jokester.
+                </TypographyP>
+                <TypographyP>
+                    And then, one day, the people of the kingdom discovered that
+                    the jokes left by Jokester were so funny that they couldnt
+                    help but laugh. And once they started laughing, they couldnt
+                    stop.
+                </TypographyP>
+                <TypographyH3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+                    The Peoples Rebellion
+                </TypographyH3>
+                <TypographyP>
+                    The people of the kingdom, feeling uplifted by the laughter,
+                    started to tell jokes and puns again, and soon the entire
+                    kingdom was in on the joke.
+                </TypographyP>
+                <TypographyTable />
+                <TypographyP>
+                    The king, seeing how much happier his subjects were,
+                    realized the error of his ways and repealed the joke tax.
+                    Jokester was declared a hero, and the kingdom lived happily
+                    ever after.
+                </TypographyP>
+                <TypographyP>
+                    The moral of the story is: never underestimate the power of
+                    a good laugh and always be careful of bad ideas.
+                </TypographyP>
+            </div>
+        )
     },
 }
