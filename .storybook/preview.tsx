@@ -28,8 +28,15 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    options: {
+      storySort: {
+        method: 'alphabetical',
+        order: [],
+        locales: '',
+      },
+    }
   },
-};
+}
 
 export const decorators = [
  (Story) => {

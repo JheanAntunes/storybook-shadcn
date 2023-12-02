@@ -1,0 +1,58 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Typography/Font_Size" />
+
+export const typography = {
+  type: {
+    primary: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  weight: {
+    regular: '400',
+    bold: '700',
+    extrabold: '800',
+    black: '900',
+  },
+  size: {
+    "text-xs": 12,
+    "text-sm": 14,
+    "text-base": 16,
+    "text-lg": 20,
+    "text-xl": 24,
+    "text-2xl": 28,
+   "text-3xl": 32,
+    "text-4xl": 40,
+    "text-5xl": 48,
+    "text-6xl": 60,
+    "text-7xl": 72,
+    "text-8xl": 96,
+    "text-9xl": 128,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Typography
+
+**Font:** Nunito Sans
+
+**Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size['text-xs']),
+    Number(typography.size['text-sm']),
+    Number(typography.size['text-base']),
+    Number(typography.size['text-lg']),
+    Number(typography.size['text-2xl']),
+    Number(typography.size['text-3xl']),
+    Number(typography.size['text-4xl']),
+    Number(typography.size['text-5xl']),
+    Number(typography.size['text-6xl']),
+    Number(typography.size['text-7xl']),
+    Number(typography.size['text-8xl']),
+    Number(typography.size['text-9xl']),
+  ]}
+  fontWeight={typography.weight.black}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
