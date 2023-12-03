@@ -4,7 +4,7 @@ import { themes } from '@storybook/theming';
 import "../src/styles/globals.css";
 import {ThemeProvider} from "../src/components/theme/theme-provider"
 import * as React from "react"
-import {darkUIStorybook, lightUIStorybook} from "./themes-Storybook-UI"
+import {darkUIStorybook, lightUIStorybook, commonTheme} from "./themes-Storybook-UI"
 
 const preview: Preview = {
   parameters: {
@@ -15,9 +15,9 @@ const preview: Preview = {
       darkClass: 'dark',
       lightClass: 'light',
       // Override the default dark theme
-      dark: { ...themes.dark, ...darkUIStorybook},
+      dark: { ...themes.dark, ...darkUIStorybook, ...commonTheme},
       // Override the default light theme
-      light: { ...themes.normal, ...lightUIStorybook},
+      light: { ...themes.normal, ...lightUIStorybook, ...commonTheme},
       // Set the initial theme
       current: 'dark'
     },
@@ -31,8 +31,7 @@ const preview: Preview = {
     options: {
       storySort: {
         method: 'alphabetical',
-        order: [],
-        locales: '',
+        order: ["Introduction","Example","Shadcn","Colors","Typography"],
       },
     }
   },
