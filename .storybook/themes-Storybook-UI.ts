@@ -14,7 +14,7 @@ export const darkUIStorybook = {
 
     // Text colors
     textColor: "hsl(210 40% 98%)",
-    // textInverseColor: "hsl(217.2 32.6% 17.5%)",
+    textInverseColor: "hsl(217.2 32.6% 17.5%)",
 
     // Toolbar default and active colors
     barTextColor: "hsl(210 40% 98%)",
@@ -29,3 +29,10 @@ export const darkUIStorybook = {
 }
 
 export const lightUIStorybook = {}
+
+export const commonTheme = {
+    brandTitle: "Shadcn-ui",
+    brandUrl: "https://ui.shadcn.com/",
+    brandTarget: "_blank",
+    brandImage: "https://ui.shadcn.com/favicon-32x32.png",
+  }
