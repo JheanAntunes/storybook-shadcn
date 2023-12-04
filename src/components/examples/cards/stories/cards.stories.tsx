@@ -9,6 +9,9 @@ import { DemoPaymentMethod } from '../components/payment-method'
 import { DemoReportAnIssue } from '../components/report-an-issue'
 import { DemoShareDocument } from '../components/share-document'
 import { DemoTeamMembers } from '../components/team-members'
+import Image from 'next/image'
+import ImgCardDark from '../assets/cards-dark.png'
+import ImgCardLight from '../assets/cards-light.png'
 
 function DemoContainer({
     className,
@@ -31,20 +34,20 @@ const meta = {
         return (
             <>
                 <div className="md:hidden">
-                    {/* <Image
-                        src="/examples/cards-light.png"
+                    <Image
+                        src={ImgCardDark}
                         width={1280}
                         height={1214}
                         alt="Cards"
                         className="block dark:hidden"
                     />
                     <Image
-                        src="/examples/cards-dark.png"
+                        src={ImgCardLight}
                         width={1280}
                         height={1214}
                         alt="Cards"
                         className="hidden dark:block"
-                    /> */}
+                    />
                 </div>
                 <div className="hidden items-start justify-center gap-6 rounded-lg p-8 md:grid lg:grid-cols-2 xl:grid-cols-3">
                     <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
