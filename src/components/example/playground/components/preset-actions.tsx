@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { Dialog } from '@radix-ui/react-dialog'
-import { Dot } from 'lucide-react'
+import { DotIcon } from 'lucide-react'
 
 import {
     AlertDialog,
@@ -42,7 +42,11 @@ export function PresetActions() {
                 <DropdownMenuTrigger asChild>
                     <Button variant="secondary">
                         <span className="sr-only">Actions</span>
-                        <Dot className="h-4 w-4" />
+                        <div className="flex">
+                            <DotIcon className="w-3 h-3" />
+                            <DotIcon className="w-3 h-3" />
+                            <DotIcon className="w-3 h-3" />
+                        </div>
                     </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
