@@ -5,25 +5,27 @@ import Link from 'next/link'
 import { cn } from '../../../lib/utils'
 import { buttonVariants } from '../../ui/button'
 import { UserAuthForm } from './components/user-auth-form'
+import ImgAuthenticationLight from './assets/authentication-light.png'
+import ImgAuthenticationDark from './assets/authentication-dark.png'
 
 export default function AuthenticationPage() {
     return (
         <>
             <div className="md:hidden">
-                {/* <Image
-                    src="/examples/authentication-light.png"
+                <Image
+                    src={ImgAuthenticationLight}
                     width={1280}
                     height={843}
                     alt="Authentication"
                     className="block dark:hidden"
                 />
                 <Image
-                    src="/examples/authentication-dark.png"
+                    src={ImgAuthenticationDark}
                     width={1280}
                     height={843}
                     alt="Authentication"
                     className="hidden dark:block"
-                /> */}
+                />
             </div>
             <div className="container relative hidden h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
                 <Link
