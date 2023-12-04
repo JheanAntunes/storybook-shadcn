@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '../../../../lib/utils'
 import { GitHubLogoIcon } from '@radix-ui/react-icons'
 import { LoaderIcon } from 'lucide-react'
 import { Button } from '../../../ui/button'
