@@ -1,6 +1,4 @@
 import { Meta, StoryObj } from '@storybook/react'
-import Image from 'next/image'
-
 import { Button } from '../../../ui/button'
 import {
     Card,
@@ -19,7 +17,7 @@ import TeamSwitcher from '../components/team-switcher'
 import { UserNav } from '../components/user-nav'
 
 const meta = {
-    title: 'Example/dashboard',
+    title: 'Examples/dashboard',
     component: (args) => {
         return (
             <>

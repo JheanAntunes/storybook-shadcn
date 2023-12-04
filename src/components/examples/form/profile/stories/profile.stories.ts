@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { ProfileForm } from '../profile.form'
 
 const meta = {
-    title: 'Example/form',
+    title: 'Examples/form',
     component: ProfileForm,
 } satisfies Meta<{}>
 

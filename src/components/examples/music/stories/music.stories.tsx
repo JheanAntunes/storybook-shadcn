@@ -12,7 +12,7 @@ import { listenNowAlbums, madeForYouAlbums } from '../data/albums'
 import { playlists } from '../data/playlists'
 
 const meta = {
-    title: 'Example/music',
+    title: 'Examples/music',
     component: (args) => (
         <>
             <div className="md:hidden">

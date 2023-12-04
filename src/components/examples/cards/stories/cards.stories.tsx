@@ -1,8 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import Image from 'next/image'
-
 import { cn } from '../../../../lib/utils'
-
 import { DemoCookieSettings } from '../components/cookie-settings'
 import { DemoCreateAccount } from '../components/create-account'
 import { DemoDatePicker } from '../components/date-picker'
@@ -29,7 +26,7 @@ function DemoContainer({
 }
 
 const meta = {
-    title: 'Example/cards',
+    title: 'Examples/cards',
     component: (args) => {
         return (
             <>

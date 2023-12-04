@@ -3,7 +3,7 @@ import { Separator } from '../../../../ui/separator'
 import { AccountForm } from '../account-form'
 
 const meta = {
-    title: 'Example/form',
+    title: 'Examples/form',
     component: () => (
         <>
             <div className="space-y-6 max-w-xl">
