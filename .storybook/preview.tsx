@@ -31,7 +31,7 @@ const preview: Preview = {
     options: {
       storySort: {
         method: 'alphabetical',
-        order: ["Introduction","Example","Shadcn","Colors","Typography"],
+        order: ["Introduction","Examples","Shadcn","Colors","Typography"],
       },
     }
   },
