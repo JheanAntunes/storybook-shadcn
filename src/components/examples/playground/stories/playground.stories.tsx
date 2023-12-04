@@ -1,7 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import Image from 'next/image'
 import { ClockIcon } from 'lucide-react'
-
 import { Button } from '../../../ui/button'
 import {
     HoverCard,
@@ -12,7 +10,6 @@ import { Label } from '../../../ui/label'
 import { Separator } from '../../../ui/separator'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs'
 import { Textarea } from '../../../ui/textarea'
-
 import { CodeViewer } from '../components/code-viewer'
 import { MaxLengthSelector } from '../components/maxlength-selector'
 import { ModelSelector } from '../components/model-selector'
@@ -24,26 +21,29 @@ import { TemperatureSelector } from '../components/temperature-selector'
 import { TopPSelector } from '../components/top-p-selector'
 import { models, types } from '../data/models'
 import { presets } from '../data/presets'
+import Image from 'next/image'
+import ImgPlaygroundDark from '../assets/playground-dark.png'
+import ImgPlaygroundLight from '../assets/playground-light.png'
 
 const meta = {
     title: 'Examples/playground',
     component: () => (
         <>
             <div className="md:hidden">
-                {/* <Image
-                    src="/examples/playground-light.png"
+                <Image
+                    src={ImgPlaygroundLight}
                     width={1280}
                     height={916}
                     alt="Playground"
                     className="block dark:hidden"
                 />
                 <Image
-                    src="/examples/playground-dark.png"
+                    src={ImgPlaygroundDark}
                     width={1280}
                     height={916}
                     alt="Playground"
                     className="hidden dark:block"
-                /> */}
+                />
             </div>
             <div className="hidden h-full flex-col md:flex">
                 <div className="container flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16">
