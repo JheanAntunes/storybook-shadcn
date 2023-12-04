@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { UserAuthForm } from '../components/user-auth-form'
+import AuthenticationPage from '../authentication-page'
 
 const meta = {
     title: 'Examples/authentication',
-    component: UserAuthForm,
+    component: AuthenticationPage,
 } satisfies Meta<{}>
 export default meta
 
