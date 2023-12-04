@@ -4,8 +4,8 @@ import * as React from 'react'
 import { SortAsc, CheckIcon } from 'lucide-react'
 import { PopoverProps } from '@radix-ui/react-popover'
 
-import { cn } from '@/lib/utils'
-import { useMutationObserver } from '@/hooks/use-mutation-observer'
+import { cn } from '../../../../lib/utils'
+import { useMutationObserver } from '../../../../hooks/use-mutation-observer'
 import { Button } from '../../../ui/button'
 import {
     Command,
