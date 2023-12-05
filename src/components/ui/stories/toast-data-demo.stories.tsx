@@ -1,15 +1,5 @@
-import { Meta, StoryObj, Decorator } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react'
 import { ToastDemo } from '../demo/toast-data-demo'
-import { Toaster } from '../toaster'
-
-// Decoradores: https://storybook.js.org/docs/react/writing-stories/decorators#page-top
-// recomendo a leitura, tem até video.
-const LayoutRaizWithToaster: Decorator = (Story) => (
-    <div>
-        <Toaster />
-        <Story />
-    </div>
-)
 
 const meta = {
     title: 'Shadcn/toast',
@@ -22,7 +12,7 @@ const meta = {
         },
     },
     parameters: {},
-    decorators: [LayoutRaizWithToaster],
+    // decorators: [LayoutRaizWithToaster],
 } satisfies Meta<typeof ToastDemo>
 
 export default meta

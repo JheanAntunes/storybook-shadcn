@@ -5,6 +5,7 @@ import "../src/styles/globals.css";
 import {ThemeProvider} from "../src/components/theme/theme-provider"
 import * as React from "react"
 import {darkUIStorybook, lightUIStorybook, commonTheme} from "./themes-Storybook-UI"
+import {Toaster} from "../src/components/ui/toaster"
 
 const preview: Preview = {
   parameters: {
@@ -36,7 +37,7 @@ const preview: Preview = {
     }
   },
 }
-
+// Decoradores: https://storybook.js.org/docs/react/writing-stories/decorators#page-top
 export const decorators = [
  (Story) => {
   return <ThemeProvider
@@ -45,7 +46,8 @@ export const decorators = [
             disableTransitionOnChange
           >
           <div>
-                <Story />
+              <Story />    
+              <Toaster />
           </div>
     </ThemeProvider>
  }
