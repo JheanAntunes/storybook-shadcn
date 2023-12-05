@@ -10,26 +10,29 @@ import { PodcastEmptyPlaceholder } from '../components/podcast-empty-placeholder
 import { Sidebar } from '../components/sidebar'
 import { listenNowAlbums, madeForYouAlbums } from '../data/albums'
 import { playlists } from '../data/playlists'
+import Image from 'next/image'
+import ImgMusicLight from '../assets/music-light.png'
+import ImgMusicDark from '../assets/music-dark.png'
 
 const meta = {
     title: 'Examples/music',
     component: (args) => (
         <>
             <div className="md:hidden">
-                {/* <Image
-                    src="/examples/music-light.png"
+                <Image
+                    src={ImgMusicLight}
                     width={1280}
                     height={1114}
                     alt="Music"
                     className="block dark:hidden"
                 />
                 <Image
-                    src="/examples/music-dark.png"
+                    src={ImgMusicDark}
                     width={1280}
                     height={1114}
                     alt="Music"
                     className="hidden dark:block"
-                /> */}
+                />
             </div>
             <div className="hidden md:block">
                 <Menu />
