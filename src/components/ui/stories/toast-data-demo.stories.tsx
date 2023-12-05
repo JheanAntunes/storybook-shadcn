@@ -12,7 +12,6 @@ const meta = {
         },
     },
     parameters: {},
-    // decorators: [LayoutRaizWithToaster],
 } satisfies Meta<typeof ToastDemo>
 
 export default meta
