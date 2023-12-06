@@ -9,11 +9,11 @@ import { Button } from '../button'
 import { Calendar } from '../calendar'
 import { Popover, PopoverContent, PopoverTrigger } from '../popover'
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from '../select'
 
 export function DatePickerWithPresets() {
@@ -26,7 +26,7 @@ export function DatePickerWithPresets() {
                     variant={'outline'}
                     className={cn(
                         'w-[280px] justify-start text-left font-normal',
-                        !date && 'text-muted-foreground'
+                        !date && 'text-muted-foreground',
                     )}
                 >
                     <CalendarIcon className="mr-2 h-4 w-4" />

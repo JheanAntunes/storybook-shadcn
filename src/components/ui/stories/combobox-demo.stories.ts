@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { ComboboxDemo } from '../demo/combobox-demo'
 
-//documentar meu componente, armazenar, posição do elemento, tipo controls
 const meta = {
     title: 'Shadcn/combobox',
     component: ComboboxDemo,

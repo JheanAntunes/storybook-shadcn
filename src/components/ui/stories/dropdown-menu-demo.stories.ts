@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { DropdownMenuDemo } from '../demo/dropdown-menu-demo'
 
-//meta
 const meta = {
     title: 'Shadcn/dropdown-menu',
     component: DropdownMenuDemo,
