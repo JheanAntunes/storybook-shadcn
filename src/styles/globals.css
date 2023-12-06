@@ -89,7 +89,7 @@
   color: hsl(var(--foreground));
 }
 
-.dark .css-qa4clq {
+.dark .css-qa4clq * {
   background: hsl(var(--background));
   color: hsl(var(--foreground)) hsl(var(--foreground))
 }
