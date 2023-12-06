@@ -7,13 +7,13 @@ import * as z from 'zod'
 import { Button } from '../button'
 import { Checkbox } from '../checkbox'
 import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
+    Form,
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
 } from '../form'
 import { toast } from '../use-toast'
 
@@ -102,26 +102,26 @@ export function CheckboxReactHookFormMultiple() {
                                                 <FormControl>
                                                     <Checkbox
                                                         checked={field.value?.includes(
-                                                            item.id
+                                                            item.id,
                                                         )}
                                                         onCheckedChange={(
-                                                            checked
+                                                            checked,
                                                         ) => {
                                                             return checked
                                                                 ? field.onChange(
                                                                       [
                                                                           ...field.value,
                                                                           item.id,
-                                                                      ]
+                                                                      ],
                                                                   )
                                                                 : field.onChange(
                                                                       field.value?.filter(
                                                                           (
-                                                                              value
+                                                                              value,
                                                                           ) =>
                                                                               value !==
-                                                                              item.id
-                                                                      )
+                                                                              item.id,
+                                                                      ),
                                                                   )
                                                         }}
                                                     />
