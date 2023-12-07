@@ -1,5 +1,6 @@
 # Storybook & Shadcn-ui.
 Eu queria aprender storybook e utilizei os componentes do shadcn-ui para praticar o que estava aprendendo.
+hospedado chromatic -[site](https://65711ecf32bae758b457ae34-uryqbzvojc.chromatic.com/?path=/docs/shadcn-button--docs)
 
 ## Destaques da aprendizagem storybook
 - [Acessibilidades](https://storybook.js.org/addons/@storybook/addon-a11y) em todas stories.
