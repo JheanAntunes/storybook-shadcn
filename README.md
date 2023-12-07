@@ -1,6 +1,6 @@
 # Storybook & Shadcn-ui.
 Eu queria aprender storybook e utilizei os componentes do shadcn-ui para praticar o que estava aprendendo.
-hospedado chromatic -[ShadcnStorybook](https://65711ecf32bae758b457ae34-uryqbzvojc.chromatic.com/?path=/docs/shadcn-button--docs)
+Hospedado Chromatic -[ShadcnStorybook](https://65711ecf32bae758b457ae34-uryqbzvojc.chromatic.com/?path=/docs/shadcn-button--docs)
 
 ## Destaques da aprendizagem storybook
 - [Acessibilidades](https://storybook.js.org/addons/@storybook/addon-a11y) em todas stories.
@@ -35,11 +35,11 @@ Os módulos que você import não pode ser customizado, exemplo: @components/ui/
 ### variáveis de css no documento do storybook
 copiei as variáveis de css do documento preview e adicionei no documento do storybook, porém , se você adiciona os estilos personalizados de themes por variáveis css mostra um error de color. por isso precisei fazer manualmente os estilos personalizados theme na Ui Storybook.
 
-## Docs 
+## Contribuições 
 [Storybook](https://storybook.js.org/)
 [Shadcn-ui](https://ui.shadcn.com/)
 [padrão-commit](https://github.com/iuricode/padroes-de-commits)
-
+[Chromatic](chromatic.com)
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
