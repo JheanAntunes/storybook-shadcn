@@ -10,7 +10,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "chromatic": "npx chromatic --project-token=chpt_81a4c0c0202c647"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
@@ -100,5 +101,7 @@
     "tailwindcss": "^3.3.0",
     "ts-jest": "^29.1.1",
     "typescript": "^5"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "storybook-shadcn@0.1.0"
 }
