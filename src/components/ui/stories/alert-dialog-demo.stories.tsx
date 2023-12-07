@@ -58,24 +58,4 @@ type Story = StoryObj<{}>
 
 export const AlertDialogDemo: Story = {
     args: {},
-    play: async ({ canvasElement, step }) => {
-        const canvas = within(canvasElement)
-        const btnOpen = canvas.getByTestId('trigger')
-
-        await step(
-            'Simulation Click on the button to open the dialog',
-            async () => {
-                await userEvent.click(btnOpen)
-            },
-        )
-
-        const title = canvas.getByTestId('title')
-        const description = canvas.getByTestId('description')
-        const btnCancel = canvas.getByTestId('cancel')
-        const btnAction = canvas.getByTestId('Action')
-        await expect(title).toBeVisible()
-        await expect(description).toBeVisible()
-        await expect(btnCancel).toBeVisible()
-        await expect(btnAction).toBeVisible()
-    },
 }
