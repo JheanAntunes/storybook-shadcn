@@ -1,5 +1,12 @@
 # Storybook & Shadcn-ui.
-Eu queria aprender storybook e utilizei os componentes do shadcn-ui para praticar o que estava aprendendo.
+Projeto Storybook Shadcn-ui: Uma Jornada de Aprendizado e Inovação
+
+O Projeto Storybook Shadcn-ui representa um marco pessoal significativo na minha jornada como desenvolvedor. Este projeto foi uma oportunidade de mergulhar profundamente na biblioteca Storybook, explorando e aplicando o vasto repositório de componentes do Shadcn-ui.
+
+Com dedicação e criatividade, consegui criar uma aplicação robusta e atraente, que rapidamente se tornou um dos meus trabalhos mais impressionantes. Optei por não divulgar o projeto publicamente, uma decisão que reflete meu compromisso com a qualidade e a sustentabilidade a longo prazo. Estava ciente de que manter o projeto atualizado exigiria um investimento contínuo em aprendizado e adaptação a novas ferramentas, algo que eu precisava ponderar cuidadosamente.
+
+O Projeto Storybook Shadcn-ui é, portanto, um testemunho do meu crescimento como profissional e do meu compromisso em criar soluções de software que não apenas atendam às necessidades atuais, mas também permaneçam relevantes e adaptáveis no futuro.
+
 Hospedado Chromatic -[ShadcnStorybook](https://65711ecf32bae758b457ae34-uryqbzvojc.chromatic.com/?path=/docs/shadcn-button--docs)
 
 ## Destaques da aprendizagem storybook
